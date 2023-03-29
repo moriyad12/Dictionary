@@ -8,8 +8,8 @@ public class Node {
         freq = 0;
         height = 0;
         col=1;
-        left = null;
-        right = null;
+        left = new Node(this);;
+        right = new Node(this);;
         parent=null;
     }
     Node(Node par){
@@ -49,8 +49,11 @@ public class Node {
         height = 1 + Math.max(left.height, right.height);
     }
     int comp(Object val) {
+
         if (val instanceof String) {
+            if((String) this.val !=null)
             return ((String) val).compareTo((String) this.val);
+            else   return -1;
         } else if (val instanceof Integer) {
             if ((int) val > (int) this.val) {
                 return 1;

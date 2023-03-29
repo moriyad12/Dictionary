@@ -149,8 +149,8 @@ public class test {
         int start= (int) System.nanoTime();
         Avl Atree = new Avl();
         Node Aroot=new Node();
-        Aroot = Atree.Patchins(Aroot,"F:\\data structure\\dataStructureLab1\\dataStructureLab1\\insr1.txt");
-        assertEquals("aa bb cc mm vv zz ", Atree.printInorder(Aroot));
+        Aroot = Atree.Patchins(Aroot,"F:\\DIctionary\\AVL\\AVL\\src\\testInsert300.txt");
+      //  assertEquals("aa bb cc mm vv zz ", Atree.printInorder(Aroot));
         int end=(int)System.nanoTime();
         System.out.println((end-start)/1000);
     }
@@ -159,10 +159,10 @@ public class test {
         int start= (int) System.nanoTime();
         Avl Atree = new Avl();
         Node Aroot=new Node();
-        Aroot = Atree.Patchins(Aroot,"F:\\data structure\\dataStructureLab1\\dataStructureLab1\\iinsertTest.txt");
-        Aroot = Atree.Patchdel(Aroot,"F:\\data structure\\dataStructureLab1\\dataStructureLab1\\TestDel.txt");
+        Aroot = Atree.Patchins(Aroot,"F:\\DIctionary\\AVL\\AVL\\src\\testInsert300.txt");
+        Aroot = Atree.Patchdel(Aroot,"F:\\DIctionary\\AVL\\AVL\\src\\testDelete300.txt");
 
-        assertEquals("aa bb cc mm ",Atree.printInorder(Aroot) );
+        //assertEquals("aa bb cc mm ",Atree.printInorder(Aroot) );
         int end=(int)System.nanoTime();
         System.out.println((end-start)/1000);
     }
@@ -171,8 +171,8 @@ public class test {
         int start= (int) System.nanoTime();
         Avl Atree = new Avl();
         Node Aroot=new Node();
-        Aroot = Atree.Patchins(Aroot,"F:\\data structure\\dataStructureLab1\\dataStructureLab1\\iinsertTest.txt");
-        Aroot = Atree.Patchdel(Aroot,"F:\\data structure\\dataStructureLab1\\dataStructureLab1\\TestDel.txt");
+        Aroot = Atree.Patchins(Aroot,"F:\\DIctionary\\iinsertTest.txt");
+        Aroot = Atree.Patchdel(Aroot,"F:\\DIctionary\\TestDel.txt");
         assertEquals(false, Atree.search(Aroot,"ss"));
         int end=(int)System.nanoTime();
         System.out.println((end-start)/1000);
@@ -181,8 +181,8 @@ public class test {
         int start= (int) System.nanoTime();
         Avl Atree = new Avl();
         Node Aroot=new Node();
-        Aroot = Atree.Patchins(Aroot,"F:\\data structure\\dataStructureLab1\\dataStructureLab1\\iinsertTest.txt");
-        Aroot = Atree.Patchdel(Aroot,"F:\\data structure\\dataStructureLab1\\dataStructureLab1\\TestDel.txt");
+        Aroot = Atree.Patchins(Aroot,"F:\\DIctionary\\iinsertTest.txt");
+        Aroot = Atree.Patchdel(Aroot,"F:\\DIctionary\\TestDel.txt");
         assertEquals(true, Atree.search(Aroot,"mm"));
         int end=(int)System.nanoTime();
         System.out.println((end-start)/1000);

@@ -150,7 +150,7 @@ public class RBT {
         return root;
     }
     Node search (Node root, Object ins_val){
-            if (root.is_null()) {
+            if (root == null ||root.is_null()) {
                 return null;
             }
             if (root.comp(ins_val) == 0) {
@@ -339,6 +339,7 @@ public class RBT {
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
                 node2 = delete(node2, data);
+
             }
             myReader.close();
         } catch (FileNotFoundException e) {
